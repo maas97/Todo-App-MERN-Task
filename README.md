@@ -21,7 +21,7 @@ To install the application, please follow these steps:
 1. Clone the repository to your local machine.
 2. Run `npm install` in (server, client and this current directories) to install all dependencies of the frontend and the backend.
 3. Create a .env file in the server directory and add the necessary environment variables. You can use the .env.example file as a template.
-4. To run the project, you can run both of the frontend and the backend of the app with single command `npm run start`
+4. To run the project, you can run both of the frontend and the backend of the app with single command `npm run start` in the main directory of the project.
 5. Go to `http://localhost:5173/` to access the app.
 
 ## Features
