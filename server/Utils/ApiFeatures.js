@@ -86,7 +86,6 @@ class ApiFeatures {
         this.mongooseQuery = this.mongooseQuery.skip(skip).limit(limit);
         return this;
       }
-    
 
 }
 
