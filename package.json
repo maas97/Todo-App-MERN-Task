@@ -1,0 +1,32 @@
+{
+  "name": "todo-app-mern",
+  "version": "1.0.0",
+  "description": "A todo app to make all your todos come trues",
+  "main": "index.js",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "client:dev": "npm run dev --workspace=client",
+    "server:dev": "npm run start --workspace=server",
+    "start": "concurrently 'npm:server:dev' 'npm:client:dev' ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ts",
+    "react",
+    "nestjs",
+    "socketjs"
+  ],
+  "author": "Mohamed Ashraf Ali",
+  "license": "ISC",
+  "dependencies": {
+    "@types/webpack": "^5.28.5",
+    "concurrently": "^8.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "prettier": "3.2.5"
+  }
+}

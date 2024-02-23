@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Cairo', sans-serif;
+}
+
+body:dir(rtl) {
+  font-family: 'Cairo', sans-serif;
+}
+
+body:dir(ltr) {
+  font-family: 'Inter', sans-serif;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-secondary-accent rounded-[2px] w-1 !important;
+  width: 1px !important;
+}
+
+::-webkit-scrollbar {
+  height: 6px !important;
+  @apply hidden md:block bg-[#f4f4f4];
+}
+
+.my-container {
+  @apply px-4 md:px-9 lg:px-16;
+}
+
+section.my-container {
+  @apply py-4 md:py-12 lg:py-16;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+/* ----------------------------- */
